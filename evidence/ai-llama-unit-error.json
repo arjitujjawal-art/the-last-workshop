@@ -1,0 +1,301 @@
+{
+  "kind": "actual local model inference; single attempt per seeded case; engineering notes included in prompt; NOT a held-out generalization benchmark",
+  "timestamp": "2026-10-29T19:46:41.523Z",
+  "model": "llama3.1:8b",
+  "cases": 9,
+  "validProposals": 6,
+  "recovered": 6,
+  "rows": [
+    {
+      "id": "radio",
+      "seed": 3,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Adjust tuning to match carrier peak, reduce bandwidth to reject high-frequency residue, and decrease gain to prevent clipping.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 1000
+          },
+          {
+            "control": "bandwidth",
+            "value": 450
+          },
+          {
+            "control": "gain",
+            "value": 1
+          }
+        ],
+        "sources": [
+          "am"
+        ],
+        "uncertainty": "Adjustments may require iterative refinement based on subsequent measurements."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 10129,
+        "outputTokens": 95,
+        "inputTokens": 511,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:46:23.985Z"
+      },
+      "before": {
+        "snr": -50.69,
+        "clipping": 56.04,
+        "signalPower": 0.7116
+      },
+      "after": {
+        "snr": 20.63,
+        "clipping": 0,
+        "signalPower": 0.0965
+      },
+      "recovered": true
+    },
+    {
+      "id": "radio",
+      "seed": 7,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Adjust tuning to match carrier peak, reduce bandwidth to reject high-frequency residue, and decrease gain to prevent clipping.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 995
+          },
+          {
+            "control": "bandwidth",
+            "value": 450
+          },
+          {
+            "control": "gain",
+            "value": 1
+          }
+        ],
+        "sources": [
+          "am"
+        ],
+        "uncertainty": "Adjustments may require iterative refinement based on subsequent measurements."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 1927,
+        "outputTokens": 94,
+        "inputTokens": 510,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:46:26.063Z"
+      },
+      "before": {
+        "snr": -46.41,
+        "clipping": 57.25,
+        "signalPower": 0.7246
+      },
+      "after": {
+        "snr": 20.6,
+        "clipping": 0,
+        "signalPower": 0.0963
+      },
+      "recovered": true
+    },
+    {
+      "id": "radio",
+      "seed": 11,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Adjust tuning to match carrier peak, reduce bandwidth to reject high-frequency residue, and decrease gain to prevent clipping.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 990
+          },
+          {
+            "control": "bandwidth",
+            "value": 450
+          },
+          {
+            "control": "gain",
+            "value": 1
+          }
+        ],
+        "sources": [
+          "am"
+        ],
+        "uncertainty": "Adjustments may require iterative refinement based on subsequent measurements."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 2101,
+        "outputTokens": 103,
+        "inputTokens": 510,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:46:28.275Z"
+      },
+      "before": {
+        "snr": -53.53,
+        "clipping": 59.06,
+        "signalPower": 0.7328
+      },
+      "after": {
+        "snr": 20.35,
+        "clipping": 0,
+        "signalPower": 0.0954
+      },
+      "recovered": true
+    },
+    {
+      "id": "telegraph",
+      "seed": 3,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Adjust the dot duration to match the timing of the Morse code and reduce the signal threshold to improve character recognition.",
+        "actions": [
+          {
+            "control": "unit",
+            "value": 90
+          },
+          {
+            "control": "threshold",
+            "value": 0.35
+          }
+        ],
+        "sources": [
+          "morse"
+        ],
+        "uncertainty": "Adjustments may require re-tuning of the telegraph's timing and signal strength."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 2306,
+        "outputTokens": 101,
+        "inputTokens": 469,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:46:30.684Z"
+      },
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 9.45
+      },
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 9.45
+      },
+      "recovered": true
+    },
+    {
+      "id": "telegraph",
+      "seed": 7,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Adjust the dot duration to match the shortest pulse measured, and lower the signal threshold to improve character recognition.",
+        "actions": [
+          {
+            "control": "unit",
+            "value": 80
+          },
+          {
+            "control": "threshold",
+            "value": 0.35
+          }
+        ],
+        "sources": [
+          "morse"
+        ],
+        "uncertainty": "Adjustments may require re-tuning of the telegraph's timing and signal processing."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 2161,
+        "outputTokens": 100,
+        "inputTokens": 469,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:46:32.943Z"
+      },
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 6.32
+      },
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 6.32
+      },
+      "recovered": true
+    },
+    {
+      "id": "telegraph",
+      "seed": 11,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Adjust the dot duration to match the shortest pulse measured, and lower the signal threshold to improve character recognition.",
+        "actions": [
+          {
+            "control": "unit",
+            "value": 70
+          },
+          {
+            "control": "threshold",
+            "value": 0.35
+          }
+        ],
+        "sources": [
+          "morse"
+        ],
+        "uncertainty": "Adjustments may require re-tuning of the telegraph's timing and signal processing."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 2092,
+        "outputTokens": 100,
+        "inputTokens": 469,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:46:35.128Z"
+      },
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 8.05
+      },
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 8.05
+      },
+      "recovered": true
+    },
+    {
+      "id": "modem",
+      "seed": 3,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 7,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 11,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    }
+  ]
+}

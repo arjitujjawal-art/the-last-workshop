@@ -1,0 +1,396 @@
+{
+  "kind": "actual local model inference; single attempt per seeded case; engineering notes included in prompt; NOT a held-out generalization benchmark",
+  "timestamp": "2026-10-29T19:36:34.885Z",
+  "model": "gemma3:1b",
+  "cases": 9,
+  "validProposals": 8,
+  "recovered": 0,
+  "rows": [
+    {
+      "id": "radio",
+      "seed": 3,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The SNR is low, indicating a significant signal loss. The clipping is high, suggesting excessive amplification. The signal power is low, indicating a weak signal. Tuning to 1000 kHz and adjusting gain to 2.8x will improve the SNR by increasing the signal strength and reducing clipping. Bandwidth is set to 1200 Hz, which is sufficient for the signal frequency range.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 1000
+          },
+          {
+            "control": "bandwidth",
+            "value": 1200
+          },
+          {
+            "control": "gain",
+            "value": 2.8
+          }
+        ],
+        "sources": [],
+        "uncertainty": "Signal strength is low, requiring amplification to improve SNR."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 5129,
+        "outputTokens": 155,
+        "inputTokens": 549,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:16.914Z"
+      },
+      "before": {
+        "snr": -50.69,
+        "clipping": 56.04,
+        "signalPower": 0.7116
+      },
+      "after": {
+        "snr": 9.03,
+        "clipping": 35.43,
+        "signalPower": 0.5262
+      },
+      "recovered": false
+    },
+    {
+      "id": "radio",
+      "seed": 7,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The signal power is low, indicating a weak signal. The SNR is significantly reduced, suggesting a significant amount of noise. The clipping is high, indicating the signal is being distorted. The carrier peak is low, indicating a weak signal. Adjusting the gain will increase the signal strength, reducing clipping and improving SNR. Tuning will match the carrier peak to improve the signal quality.",
+        "actions": [
+          {
+            "control": "gain",
+            "value": 2.5
+          },
+          {
+            "control": "bandwidth",
+            "value": 1400
+          },
+          {
+            "control": "tune",
+            "value": 928
+          }
+        ],
+        "sources": [
+          "am",
+          "am",
+          "am"
+        ],
+        "uncertainty": "Moderate - Signal strength and noise levels are low, but the signal power is still low."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 1811,
+        "outputTokens": 172,
+        "inputTokens": 548,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:18.855Z"
+      },
+      "before": {
+        "snr": -46.41,
+        "clipping": 57.25,
+        "signalPower": 0.7246
+      },
+      "after": {
+        "snr": -46.79,
+        "clipping": 56.3,
+        "signalPower": 0.7156
+      },
+      "recovered": false
+    },
+    {
+      "id": "radio",
+      "seed": 11,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The signal-to-noise ratio is low, indicating a significant amount of interference. The clipping level is high, suggesting the signal is being attenuated. The signal power is low, indicating a weak signal. Tuning the carrier peak to 927 kHz helps to isolate the desired signal, reducing interference. Increasing the bandwidth helps to improve the signal’s clarity and reduce the impact of noise. Increasing the gain helps to boost the signal strength, improving the signal-to-noise ratio.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 927
+          },
+          {
+            "control": "bandwidth",
+            "value": 1200
+          },
+          {
+            "control": "gain",
+            "value": 2.8
+          }
+        ],
+        "sources": [
+          "am",
+          "am"
+        ],
+        "uncertainty": "Moderate - Signal strength and interference levels require careful adjustment."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 2160,
+        "outputTokens": 183,
+        "inputTokens": 548,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:21.126Z"
+      },
+      "before": {
+        "snr": -53.53,
+        "clipping": 59.06,
+        "signalPower": 0.7328
+      },
+      "after": {
+        "snr": -53.53,
+        "clipping": 59.06,
+        "signalPower": 0.7328
+      },
+      "recovered": false
+    },
+    {
+      "id": "telegraph",
+      "seed": 3,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The instrument’s shortest pulse is significantly higher than expected, indicating a potential issue with the signal processing. The pulse peak is low, suggesting a weak signal. The noise floor is also high, indicating a lot of noise in the signal. Adjusting the unit to 145ms will help to reduce the signal strength and improve the accuracy of the measurements. Increasing the threshold will allow the instrument to detect the signal more effectively, improving the character error rate.  The adjusted unit and threshold will help to stabilize the signal and reduce noise, leading to a more accurate representation of the signal.",
+        "actions": [
+          {
+            "control": "unit",
+            "value": 145
+          },
+          {
+            "control": "threshold",
+            "value": 0.85
+          }
+        ],
+        "sources": [
+          "morse",
+          "morse",
+          "morse"
+        ],
+        "uncertainty": "Low"
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 2060,
+        "outputTokens": 179,
+        "inputTokens": 483,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:23.295Z"
+      },
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 9.45
+      },
+      "after": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 9.45
+      },
+      "recovered": false
+    },
+    {
+      "id": "telegraph",
+      "seed": 7,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The instrument’s shortest pulse rate is low, indicating a potential issue with the signal processing. The signal’s peak is weak, suggesting a lack of sufficient amplitude. The timing is inconsistent, with gaps in the pulses. Adjusting the unit will increase the pulse rate, improving signal clarity. Increasing the threshold will amplify the signal, reducing noise and improving character accuracy. The restored state is false, and decoding is not possible with the current state.",
+        "actions": [
+          {
+            "control": "unit",
+            "value": 145
+          },
+          {
+            "control": "threshold",
+            "value": 0.85
+          }
+        ],
+        "sources": [
+          "morse",
+          "morse",
+          "morse"
+        ],
+        "uncertainty": "Low"
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 1557,
+        "outputTokens": 150,
+        "inputTokens": 483,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:24.954Z"
+      },
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 6.32
+      },
+      "after": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 6.32
+      },
+      "recovered": false
+    },
+    {
+      "id": "telegraph",
+      "seed": 11,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The signal strength is low, indicating a significant noise level. The character errors are high, suggesting a problem with the signal quality. The duration is short, indicating a potential issue with the pulse timing. Adjusting the unit to the shortest Pulse Ms will reduce the noise floor, improving signal clarity. Increasing the threshold will filter out the noise and enhance the signal, reducing character errors.  The timing is inconsistent, requiring adjustment to ensure a consistent pulse sequence.  These adjustments will improve the signal quality and reduce errors.",
+        "actions": [
+          {
+            "control": "unit",
+            "value": 145
+          },
+          {
+            "control": "threshold",
+            "value": 0.85
+          }
+        ],
+        "sources": [
+          "morse",
+          "morse",
+          "morse"
+        ],
+        "uncertainty": "Low"
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 1891,
+        "outputTokens": 164,
+        "inputTokens": 483,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:26.935Z"
+      },
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 8.05
+      },
+      "after": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 8.05
+      },
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 3,
+      "model": "gemma3:1b",
+      "error": "Unterminated string in JSON at position 1344 (line 45 column 7)",
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 7,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The measurements indicate significant bit errors, a CRC invalid, and a low received bitrate. The tone peaks suggest a problem with the modulation frequency. Adjusting the receiver offset to 180 Hz will likely resolve the bit errors by aligning the signal with the correct frequency. Setting the baud to 145 will improve the bitrate, addressing the low received bitrate issue. The CRC validation is also important to ensure the data integrity.",
+        "actions": [
+          {
+            "control": "offset",
+            "value": 180
+          },
+          {
+            "control": "baud",
+            "value": 145
+          }
+        ],
+        "sources": [
+          "fsk",
+          "fsk",
+          "fsk",
+          "fsk",
+          "fsk"
+        ],
+        "uncertainty": "Moderate - Requires careful adjustment of the offset to restore the signal."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 1848,
+        "outputTokens": 166,
+        "inputTokens": 530,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:32.663Z"
+      },
+      "before": {
+        "bitErrors": 59,
+        "ber": 61.46,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 247
+      },
+      "after": {
+        "bitErrors": 59,
+        "ber": 61.46,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 247
+      },
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 11,
+      "model": "gemma3:1b",
+      "proposal": {
+        "explanation": "The modem shows significant bit errors (42), CRC is invalid, and the received bitrate is low. The tone peaks are significantly higher than expected, indicating a potential issue with the signal strength. The restored state is false, and the decoded message is incomplete. Adjusting the receiver offset to 180 Hz helps to align the signal with the correct frequency, improving the signal-to-noise ratio. Setting the baud to 145 helps to ensure a consistent data rate, which is crucial for proper transmission. The CRC validation is also important to ensure the data integrity of the signal.",
+        "actions": [
+          {
+            "control": "offset",
+            "value": 180
+          },
+          {
+            "control": "baud",
+            "value": 145
+          }
+        ],
+        "sources": [
+          "fsk",
+          "fsk",
+          "fsk",
+          "fsk",
+          "fsk"
+        ],
+        "uncertainty": "Moderate - Bit errors and CRC invalidity suggest a problem with the signal processing, requiring attention."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "gemma3:1b",
+        "latencyMs": 2131,
+        "outputTokens": 206,
+        "inputTokens": 528,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:36:34.881Z"
+      },
+      "before": {
+        "bitErrors": 42,
+        "ber": 58.33,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "after": {
+        "bitErrors": 42,
+        "ber": 58.33,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "recovered": false
+    }
+  ]
+}

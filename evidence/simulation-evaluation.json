@@ -1,0 +1,1667 @@
+{
+  "kind": "deterministic simulation regression; NOT an AI benchmark",
+  "cases": 60,
+  "passed": 60,
+  "rows": [
+    {
+      "exhibit": "radio",
+      "seed": 1,
+      "before": {
+        "snr": -51.77,
+        "clipping": 58.99,
+        "signalPower": 0.7349
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 990
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.43,
+        "clipping": 0,
+        "signalPower": 0.0951
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 2,
+      "before": {
+        "snr": -47.79,
+        "clipping": 57.2,
+        "signalPower": 0.7216
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 995
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.54,
+        "clipping": 0,
+        "signalPower": 0.096
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 3,
+      "before": {
+        "snr": -50.69,
+        "clipping": 56.04,
+        "signalPower": 0.7116
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1000
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.63,
+        "clipping": 0,
+        "signalPower": 0.0965
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 4,
+      "before": {
+        "snr": -48.28,
+        "clipping": 55.65,
+        "signalPower": 0.6954
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1005
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.43,
+        "clipping": 0,
+        "signalPower": 0.0965
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 5,
+      "before": {
+        "snr": -48.19,
+        "clipping": 60.25,
+        "signalPower": 0.7438
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 985
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.72,
+        "clipping": 0,
+        "signalPower": 0.0955
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 6,
+      "before": {
+        "snr": -49.67,
+        "clipping": 58.94,
+        "signalPower": 0.7329
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 990
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.41,
+        "clipping": 0,
+        "signalPower": 0.0961
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 7,
+      "before": {
+        "snr": -46.41,
+        "clipping": 57.25,
+        "signalPower": 0.7246
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 995
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.6,
+        "clipping": 0,
+        "signalPower": 0.0963
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 8,
+      "before": {
+        "snr": -50.68,
+        "clipping": 56,
+        "signalPower": 0.7114
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1000
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.54,
+        "clipping": 0,
+        "signalPower": 0.0959
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 9,
+      "before": {
+        "snr": -55.79,
+        "clipping": 55.6,
+        "signalPower": 0.6969
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1005
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.48,
+        "clipping": 0,
+        "signalPower": 0.0957
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 10,
+      "before": {
+        "snr": -53.4,
+        "clipping": 60.12,
+        "signalPower": 0.7432
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 985
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.54,
+        "clipping": 0,
+        "signalPower": 0.096
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 11,
+      "before": {
+        "snr": -53.53,
+        "clipping": 59.06,
+        "signalPower": 0.7328
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 990
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.35,
+        "clipping": 0,
+        "signalPower": 0.0954
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 12,
+      "before": {
+        "snr": -50.63,
+        "clipping": 57.25,
+        "signalPower": 0.7226
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 995
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.56,
+        "clipping": 0,
+        "signalPower": 0.0953
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 13,
+      "before": {
+        "snr": -52.74,
+        "clipping": 55.83,
+        "signalPower": 0.7113
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1000
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.48,
+        "clipping": 0,
+        "signalPower": 0.0959
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 14,
+      "before": {
+        "snr": -48.67,
+        "clipping": 55.72,
+        "signalPower": 0.6962
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1005
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.54,
+        "clipping": 0,
+        "signalPower": 0.0957
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 15,
+      "before": {
+        "snr": -49.4,
+        "clipping": 60.22,
+        "signalPower": 0.7449
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 985
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.5,
+        "clipping": 0,
+        "signalPower": 0.0951
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 16,
+      "before": {
+        "snr": -52.83,
+        "clipping": 58.57,
+        "signalPower": 0.7339
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 990
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.42,
+        "clipping": 0,
+        "signalPower": 0.0954
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 17,
+      "before": {
+        "snr": -51.3,
+        "clipping": 57.2,
+        "signalPower": 0.7239
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 995
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.51,
+        "clipping": 0,
+        "signalPower": 0.0957
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 18,
+      "before": {
+        "snr": -48.77,
+        "clipping": 56.03,
+        "signalPower": 0.7123
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1000
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.33,
+        "clipping": 0,
+        "signalPower": 0.0949
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 19,
+      "before": {
+        "snr": -56.36,
+        "clipping": 55.49,
+        "signalPower": 0.696
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 1005
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.58,
+        "clipping": 0,
+        "signalPower": 0.0959
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "radio",
+      "seed": 20,
+      "before": {
+        "snr": -51.04,
+        "clipping": 60.08,
+        "signalPower": 0.7425
+      },
+      "actions": [
+        {
+          "control": "tune",
+          "value": 985
+        },
+        {
+          "control": "bandwidth",
+          "value": 450
+        },
+        {
+          "control": "gain",
+          "value": 1
+        }
+      ],
+      "after": {
+        "snr": 20.64,
+        "clipping": 0,
+        "signalPower": 0.0957
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 1,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 5.53
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 70
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 5.53
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 2,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 9.2
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 80
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 9.2
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 3,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 9.45
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 90
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 9.45
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 4,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 7.9
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 100
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 7.9
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 5,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 6.9
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 60
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 6.9
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 6,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 7.35
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 70
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 7.35
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 7,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 6.32
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 80
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 6.32
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 8,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 10.35
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 90
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 10.35
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 9,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 10.5
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 100
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 10.5
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 10,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 4.74
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 60
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 4.74
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 11,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 8.05
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 70
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 8.05
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 12,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 8.4
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 80
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 8.4
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 13,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 7.11
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 90
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 7.11
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 14,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 11.5
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 100
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 11.5
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 15,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 6.3
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 60
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 6.3
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 16,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 5.53
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 70
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 5.53
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 17,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 9.2
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 80
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 9.2
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 18,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 14,
+        "duration": 9.45
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 90
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 9.45
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 19,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 12,
+        "duration": 7.9
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 100
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 7.9
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "telegraph",
+      "seed": 20,
+      "before": {
+        "accuracy": 0,
+        "characterErrors": 15,
+        "duration": 6.9
+      },
+      "actions": [
+        {
+          "control": "unit",
+          "value": 60
+        },
+        {
+          "control": "threshold",
+          "value": 0.35
+        }
+      ],
+      "after": {
+        "accuracy": 100,
+        "characterErrors": 0,
+        "duration": 6.9
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 1,
+      "before": {
+        "bitErrors": 60,
+        "ber": 62.5,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 245
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 2,
+      "before": {
+        "bitErrors": 42,
+        "ber": 58.33,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 3,
+      "before": {
+        "bitErrors": 53,
+        "ber": 60.23,
+        "crcValid": false,
+        "totalBits": 88,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 88,
+        "receivedCrc": 243
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 4,
+      "before": {
+        "bitErrors": 60,
+        "ber": 62.5,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 245
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 5,
+      "before": {
+        "bitErrors": 42,
+        "ber": 58.33,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 6,
+      "before": {
+        "bitErrors": 53,
+        "ber": 60.23,
+        "crcValid": false,
+        "totalBits": 88,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 88,
+        "receivedCrc": 243
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 7,
+      "before": {
+        "bitErrors": 59,
+        "ber": 61.46,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 247
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 8,
+      "before": {
+        "bitErrors": 43,
+        "ber": 59.72,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 9,
+      "before": {
+        "bitErrors": 53,
+        "ber": 60.23,
+        "crcValid": false,
+        "totalBits": 88,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 88,
+        "receivedCrc": 243
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 10,
+      "before": {
+        "bitErrors": 60,
+        "ber": 62.5,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 11,
+      "before": {
+        "bitErrors": 42,
+        "ber": 58.33,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 12,
+      "before": {
+        "bitErrors": 52,
+        "ber": 59.09,
+        "crcValid": false,
+        "totalBits": 88,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 88,
+        "receivedCrc": 243
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 13,
+      "before": {
+        "bitErrors": 58,
+        "ber": 60.42,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 247
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 14,
+      "before": {
+        "bitErrors": 42,
+        "ber": 58.33,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 15,
+      "before": {
+        "bitErrors": 53,
+        "ber": 60.23,
+        "crcValid": false,
+        "totalBits": 88,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 88,
+        "receivedCrc": 243
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 16,
+      "before": {
+        "bitErrors": 59,
+        "ber": 61.46,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 247
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 17,
+      "before": {
+        "bitErrors": 44,
+        "ber": 61.11,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 18,
+      "before": {
+        "bitErrors": 53,
+        "ber": 60.23,
+        "crcValid": false,
+        "totalBits": 88,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 88,
+        "receivedCrc": 243
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 19,
+      "before": {
+        "bitErrors": 58,
+        "ber": 60.42,
+        "crcValid": false,
+        "totalBits": 96,
+        "receivedCrc": 247
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 96,
+        "receivedCrc": 166
+      },
+      "recovered": true
+    },
+    {
+      "exhibit": "modem",
+      "seed": 20,
+      "before": {
+        "bitErrors": 41,
+        "ber": 56.94,
+        "crcValid": false,
+        "totalBits": 72,
+        "receivedCrc": 255
+      },
+      "actions": [
+        {
+          "control": "offset",
+          "value": 0
+        },
+        {
+          "control": "baud",
+          "value": 100
+        }
+      ],
+      "after": {
+        "bitErrors": 0,
+        "ber": 0,
+        "crcValid": true,
+        "totalBits": 72,
+        "receivedCrc": 146
+      },
+      "recovered": true
+    }
+  ]
+}

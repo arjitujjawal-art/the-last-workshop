@@ -1,0 +1,193 @@
+{
+  "kind": "actual local model inference; single attempt per seeded case; engineering notes included in prompt; NOT a held-out generalization benchmark",
+  "timestamp": "2026-10-29T19:26:23.244Z",
+  "model": "llama3.1:8b",
+  "cases": 9,
+  "validProposals": 3,
+  "recovered": 3,
+  "rows": [
+    {
+      "id": "radio",
+      "seed": 3,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Based on the measurements, we need to adjust the tuning, bandwidth, and gain to improve the signal quality.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 1000
+          },
+          {
+            "control": "bandwidth",
+            "value": 450
+          },
+          {
+            "control": "gain",
+            "value": 1
+          }
+        ],
+        "sources": [
+          "am"
+        ],
+        "uncertainty": "Adjusting these controls may not completely eliminate clipping, but it should improve the signal-to-noise ratio."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 12151,
+        "outputTokens": 114,
+        "inputTokens": 549,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:25:59.766Z"
+      },
+      "before": {
+        "snr": -50.69,
+        "clipping": 56.04,
+        "signalPower": 0.7116
+      },
+      "after": {
+        "snr": 20.63,
+        "clipping": 0,
+        "signalPower": 0.0965
+      },
+      "recovered": true
+    },
+    {
+      "id": "radio",
+      "seed": 7,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Based on the measurements, we need to adjust the tuning, bandwidth, and gain to improve the signal quality.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 995
+          },
+          {
+            "control": "bandwidth",
+            "value": 450
+          },
+          {
+            "control": "gain",
+            "value": 1
+          }
+        ],
+        "sources": [
+          "am"
+        ],
+        "uncertainty": "Adjusting the controls may not completely eliminate the interfering tone, but it should improve the signal-to-noise ratio."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 2409,
+        "outputTokens": 115,
+        "inputTokens": 548,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:26:02.329Z"
+      },
+      "before": {
+        "snr": -46.41,
+        "clipping": 57.25,
+        "signalPower": 0.7246
+      },
+      "after": {
+        "snr": 20.6,
+        "clipping": 0,
+        "signalPower": 0.0963
+      },
+      "recovered": true
+    },
+    {
+      "id": "radio",
+      "seed": 11,
+      "model": "llama3.1:8b",
+      "proposal": {
+        "explanation": "Based on the measurements, we need to adjust the tuning, bandwidth, and gain to improve the signal quality.",
+        "actions": [
+          {
+            "control": "tune",
+            "value": 990
+          },
+          {
+            "control": "bandwidth",
+            "value": 450
+          },
+          {
+            "control": "gain",
+            "value": 1
+          }
+        ],
+        "sources": [
+          "am"
+        ],
+        "uncertainty": "Adjusting the controls may not completely eliminate the interfering tone, but it should improve the signal-to-noise ratio."
+      },
+      "trace": {
+        "provider": "Ollama",
+        "model": "llama3.1:8b",
+        "latencyMs": 2411,
+        "outputTokens": 115,
+        "inputTokens": 548,
+        "apiCostUSD": 0,
+        "validation": "accepted",
+        "timestamp": "2026-10-29T19:26:04.867Z"
+      },
+      "before": {
+        "snr": -53.53,
+        "clipping": 59.06,
+        "signalPower": 0.7328
+      },
+      "after": {
+        "snr": 20.35,
+        "clipping": 0,
+        "signalPower": 0.0954
+      },
+      "recovered": true
+    },
+    {
+      "id": "telegraph",
+      "seed": 3,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "telegraph",
+      "seed": 7,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "telegraph",
+      "seed": 11,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 3,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 7,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    },
+    {
+      "id": "modem",
+      "seed": 11,
+      "model": "llama3.1:8b",
+      "error": "An adjustment was rejected: unknown, duplicate, or out-of-range control.",
+      "recovered": false
+    }
+  ]
+}
